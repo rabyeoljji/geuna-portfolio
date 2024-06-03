@@ -2,10 +2,13 @@
 @import url("./assets/css/tailwind_input.css");
 
 body {
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 #root {
+  width: 100%;
+  height: 100%;
   font-family:
     "Noto Sans KR",
     system-ui,
