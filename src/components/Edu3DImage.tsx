@@ -6,7 +6,7 @@ const Edu3DImage = ({ isHovered }: { isHovered: boolean }): JSX.Element => {
     <motion.img
       animate={isHovered ? { scale: 1.5, rotate: 0 } : {}}
       src={EDUCATION}
-      className="w-[80%] relative top-[-10%] left-[12%] z-10 opacity-1"
+      className="w-[80%] relative top-[10$] md:top-[15%] xl:-top-[10%] left-[12%] z-10 opacity-1"
     />
   );
 };

@@ -11,24 +11,24 @@ const Contact = (): JSX.Element => {
 
   return (
     <>
-      <motion.p
+      <motion.h2
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ spring, delay: 0.5 }}
-        className="inline-block w-fit text-6xl font-extrabold my-24"
+        transition={{ spring }}
+        className="inline-block w-fit text-6xl font-extrabold my-24 mt-48"
       >
         CONTACT
-      </motion.p>
+      </motion.h2>
       <motion.div
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ spring, delay: 0.2 }}
-        className="w-full flex flex-col md:flex-row justify-between items-center px-8"
+        transition={{ spring }}
+        className="w-screen flex flex-col md:flex-row justify-between items-center px-8"
       >
         <motion.div
-          className="card w-80 min-w-40 h-[26rem] min-h-96 bg-base-100 shadow-xl mr-2 mb-2"
+          className="card w-80 min-w-40 h-[26rem] min-h-96 shrink-1 bg-base-100 shadow-xl mr-2 mb-2"
           onHoverStart={() => setGithubIsHovered(() => true)}
           onHoverEnd={() => setGithubIsHovered(() => false)}
         >
@@ -60,7 +60,7 @@ const Contact = (): JSX.Element => {
           </div>
         </motion.div>
         <motion.div
-          className="card w-80 min-w-40 h-[26rem] min-h-96 bg-base-100 shadow-xl mx-2 mb-2"
+          className="card w-80 min-w-40 h-[26rem] min-h-96 shrink-1 bg-base-100 shadow-xl mx-2 mb-2"
           onHoverStart={() => setBlogIsHovered(() => true)}
           onHoverEnd={() => setBlogIsHovered(() => false)}
         >
@@ -94,7 +94,7 @@ const Contact = (): JSX.Element => {
           </div>
         </motion.div>
         <motion.div
-          className="card w-80 min-w-40 h-[26rem] min-h-96 bg-base-100 shadow-xl ml-2 mb-2"
+          className="card w-80 min-w-40 h-[26rem] min-h-96 shrink-1 bg-base-100 shadow-xl ml-2 mb-2"
           onHoverStart={() => setEmailIsHovered(() => true)}
           onHoverEnd={() => setEmailIsHovered(() => false)}
         >

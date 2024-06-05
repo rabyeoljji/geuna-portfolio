@@ -10,21 +10,25 @@ const Career = (): JSX.Element => {
   const [isHoveredProject, setIsHoveredProject] = useState(false);
   const [isHoveredEdu, setIsHoveredEdu] = useState(false);
 
+  const goTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div className="w-screen bg-base-300 px-32 py-48 mt-40 flex justify-center items-center">
+    <div className="w-screen bg-base-300 px-32 py-96 mt-96 flex justify-center items-center">
       <div className="w-[1149px]">
         <motion.div
-          className="flex items-center mb-32"
+          className="flex flex-col md:flex-row items-center mb-72"
           initial={{ opacity: 0, y: 70 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ spring, delay: 0.5 }}
+          transition={{ spring }}
           onHoverStart={() => setIsHoveredProject(true)}
           onHoverEnd={() => setIsHoveredProject(false)}
         >
           <motion.div
             animate={isHoveredProject ? { scale: 0.8 } : {}}
-            className="w-1/2 h-48 md:h-72 lg:h-96 bg-base-100 rounded-xl mr-20"
+            className="w-1/2 h-[30vw] bg-base-100 rounded-xl mb-20 md:mb-0 md:mr-20"
           >
             <img
               src={PROJECT_THUMBNAIL}
@@ -33,30 +37,30 @@ const Career = (): JSX.Element => {
             <Project3DImage isHovered={isHoveredProject} />
           </motion.div>
           <motion.div className="flex flex-col justify-center">
-            <span className="text-5xl font-bold">PROJECT</span>
-            <Link to={"/project"} className="btn btn-sm sm:btn-md btn-neutral sm:w-40 mt-6">
+            <h2 className="text-5xl font-bold">PROJECT</h2>
+            <Link to={"/project"} className="btn btn-sm sm:btn-md btn-neutral sm:w-40 mt-6" onClick={() => goTop()}>
               Read More
             </Link>
           </motion.div>
         </motion.div>
         <motion.div
-          className="flex justify-between items-center"
+          className="flex flex-col-reverse md:flex-row justify-between items-center"
           initial={{ opacity: 0, y: 70 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ spring, delay: 0.5 }}
+          transition={{ spring, delay: 0.3 }}
           onHoverStart={() => setIsHoveredEdu(true)}
           onHoverEnd={() => setIsHoveredEdu(false)}
         >
           <motion.div className="flex flex-col justify-center">
-            <span className="text-5xl font-bold">EDUCATION</span>
-            <Link to={"/education"} className="btn btn-sm sm:btn-md btn-neutral sm:w-40 mt-6">
+            <h2 className="text-5xl font-bold">EDUCATION</h2>
+            <Link to={"/education"} className="btn btn-sm sm:btn-md btn-neutral sm:w-40 mt-6" onClick={() => goTop()}>
               Read More
             </Link>
           </motion.div>
           <motion.div
             animate={isHoveredEdu ? { scale: 0.8 } : {}}
-            className="w-1/2 h-48 md:h-72 lg:h-96 bg-base-100 rounded-xl ml-20"
+            className="w-1/2 h-[60%] bg-base-100 rounded-xl mb-20 md:mb-0 md:ml-20"
           >
             <Edu3DImage isHovered={isHoveredEdu} />
           </motion.div>

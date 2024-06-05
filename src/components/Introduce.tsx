@@ -36,16 +36,16 @@ const Introduce = (): JSX.Element => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          <div className="h-48"></div>
+          <div className="h-[30rem]"></div>
           <div className="divider divider-horizontal"></div>
-          <div className="h-48"></div>
+          <div className="h-[30rem]"></div>
         </motion.div>
       </div>
       <motion.div
-        initial={{ opacity: 0, rotateY: 300 }}
-        whileInView={{ opacity: 1, rotateY: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ type: "spring", delay: 1, duration: 2 }}
+        transition={{ type: "spring", delay: 0.5, duration: 0.5 }}
         className="flex justify-center items-center"
       >
         <img src={PORTFOLIO_THUMBNAIL} className="w-4/5 border-2 border-solid rounded-lg" />
@@ -53,17 +53,25 @@ const Introduce = (): JSX.Element => {
           className={`absolute loading loading-ring loading-lg w-48 text-white ${!isHoveredNotion ? "hidden" : ""}`}
         ></span>
       </motion.div>
-      <p className="text-2xl mt-10 text-gray-500">MY NOTION PORTFOLIO</p>
-      <a
-        className="btn btn-sm sm:btn-md btn-neutral sm:w-40 mt-6"
-        onMouseOver={() => setIsHoveredNotion(() => true)}
-        onMouseOut={() => setIsHoveredNotion(() => false)}
-        href="https://na-s-note-page.notion.site/Hello-I-m-Developer-who-listens-carefully-3ca2c1b21e4d425e95b65b629bcd5c54?pvs=4"
-        target="_blank"
-        rel="noopener noreferrer"
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ type: "spring", duration: 0.5 }}
+        className="flex flex-col justify-center items-center mt-10"
       >
-        노션 포트폴리오
-      </a>
+        <p className="text-2xl text-gray-500">MY NOTION PORTFOLIO</p>
+        <a
+          className="btn btn-sm sm:btn-md btn-neutral sm:w-40 mt-6"
+          onMouseOver={() => setIsHoveredNotion(() => true)}
+          onMouseOut={() => setIsHoveredNotion(() => false)}
+          href="https://na-s-note-page.notion.site/Hello-I-m-Developer-who-listens-carefully-3ca2c1b21e4d425e95b65b629bcd5c54?pvs=4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          노션 포트폴리오
+        </a>
+      </motion.div>
     </>
   );
 };
