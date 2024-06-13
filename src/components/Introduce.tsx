@@ -45,7 +45,7 @@ const Introduce = (): JSX.Element => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ type: "spring", delay: 0.5, duration: 0.5 }}
+        transition={{ type: "spring", delay: 0.2, duration: 0.5 }}
         className="flex justify-center items-center"
       >
         <img src={PORTFOLIO_THUMBNAIL} className="w-4/5 border-2 border-solid rounded-lg" />

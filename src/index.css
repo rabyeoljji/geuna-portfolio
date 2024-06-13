@@ -23,3 +23,11 @@ body {
     "Helvetica Neue",
     sans-serif;
 }
+
+.hidden-scroll {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none;
+}
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
