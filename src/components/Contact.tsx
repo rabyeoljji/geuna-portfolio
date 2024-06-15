@@ -7,10 +7,8 @@ const Contact = (): JSX.Element => {
   const [blogIsHovered, setBlogIsHovered] = useState(false);
   const [emailIsHovered, setEmailIsHovered] = useState(false);
 
-  // todo : email 버튼 누를 시, 메일 작성할 수 있도록
-
   return (
-    <>
+    <div className="w-full flex flex-col justify-center items-center">
       <motion.h2
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -25,14 +23,14 @@ const Contact = (): JSX.Element => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ spring }}
-        className="w-screen flex flex-col md:flex-row justify-between items-center px-8"
+        className="w-full flex flex-col pad:flex-row justify-between items-center md:px-8"
       >
         <motion.div
-          className="card w-80 min-w-40 h-[26rem] min-h-96 shrink-1 bg-base-100 shadow-xl mr-2 mb-2"
+          className="card w-full pad:w-1/3 min-w-40 h-[50vh] md:h-[60vh] lg:h-[80vh] shrink-1 bg-base-100 shadow-xl mr-2 mb-4"
           onHoverStart={() => setGithubIsHovered(() => true)}
           onHoverEnd={() => setGithubIsHovered(() => false)}
         >
-          <figure className="p-4 bg-base-200">
+          <figure className=" h-1/2 p-4 bg-base-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -60,11 +58,11 @@ const Contact = (): JSX.Element => {
           </div>
         </motion.div>
         <motion.div
-          className="card w-80 min-w-40 h-[26rem] min-h-96 shrink-1 bg-base-100 shadow-xl mx-2 mb-2"
+          className="card w-full pad:w-1/3 min-w-40 h-[50vh] md:h-[60vh] lg:h-[80vh] shrink-1 bg-base-100 shadow-xl mx-2 mb-4"
           onHoverStart={() => setBlogIsHovered(() => true)}
           onHoverEnd={() => setBlogIsHovered(() => false)}
         >
-          <figure className="w-full h-full p-4 bg-base-200">
+          <figure className="w-full h-1/2 p-4 bg-base-200">
             <svg
               role="img"
               viewBox="0 0 24 24"
@@ -94,11 +92,11 @@ const Contact = (): JSX.Element => {
           </div>
         </motion.div>
         <motion.div
-          className="card w-80 min-w-40 h-[26rem] min-h-96 shrink-1 bg-base-100 shadow-xl ml-2 mb-2"
+          className="card w-full pad:w-1/3 min-w-40 h-[50vh] md:h-[60vh] lg:h-[80vh] shrink-1 bg-base-100 shadow-xl ml-2 mb-4"
           onHoverStart={() => setEmailIsHovered(() => true)}
           onHoverEnd={() => setEmailIsHovered(() => false)}
         >
-          <figure className="p-4 bg-base-200">
+          <figure className="h-1/2 p-4 bg-base-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -115,12 +113,14 @@ const Contact = (): JSX.Element => {
             <h2 className="card-title">Email</h2>
             <p className="w-full text-wrap whitespace-nowrap break-all">nageuna922@gmail.com</p>
             <div className="card-actions justify-center mt-4">
-              <button className="btn btn-neutral">Send Mail</button>
+              <a href="mailto:nageuna922@gmail.com" className="btn btn-neutral">
+                Send Mail
+              </a>
             </div>
           </div>
         </motion.div>
       </motion.div>
-    </>
+    </div>
   );
 };
 

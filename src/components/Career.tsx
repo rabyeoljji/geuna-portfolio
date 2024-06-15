@@ -15,8 +15,8 @@ const Career = (): JSX.Element => {
   };
 
   return (
-    <div className="w-screen bg-base-300 px-32 py-96 mt-96 flex justify-center items-center">
-      <div className="w-[1149px]">
+    <div className="w-screen bg-base-300 mt-96 flex justify-center items-center">
+      <div className="w-4/5 xl:w-[1149px] p-8 xl:px-32 my-96">
         <motion.div
           className="flex flex-col md:flex-row items-center mb-72"
           initial={{ opacity: 0, y: 70 }}
@@ -28,7 +28,7 @@ const Career = (): JSX.Element => {
         >
           <motion.div
             animate={isHoveredProject ? { scale: 0.8 } : {}}
-            className="w-1/2 h-[30vw] bg-base-100 rounded-xl mb-20 md:mb-0 md:mr-20"
+            className="w-4/5 xl:w-1/2 h-[30vw] bg-base-100 rounded-xl mb-20 md:mb-0 md:mr-20"
           >
             <img
               src={PROJECT_THUMBNAIL}
@@ -60,7 +60,7 @@ const Career = (): JSX.Element => {
           </motion.div>
           <motion.div
             animate={isHoveredEdu ? { scale: 0.8 } : {}}
-            className="w-1/2 h-[60%] bg-base-100 rounded-xl mb-20 md:mb-0 md:ml-20"
+            className="w-4/5 xl:w-1/2 h-[60%] bg-base-100 rounded-xl mb-20 md:mb-0 md:ml-20"
           >
             <Edu3DImage isHovered={isHoveredEdu} />
           </motion.div>

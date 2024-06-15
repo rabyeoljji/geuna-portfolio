@@ -4,7 +4,7 @@ import Contact from "./Contact";
 
 const Index = (): JSX.Element => {
   return (
-    <div className="max-w-[1149px] flex flex-col justify-center items-center pb-32">
+    <div className="w-4/5 max-w-[1149px] flex flex-col justify-center items-center pb-32">
       <Introduce />
       <Career />
       <Contact />

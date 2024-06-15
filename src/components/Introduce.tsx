@@ -8,17 +8,17 @@ const Introduce = (): JSX.Element => {
 
   return (
     <>
-      <header className="inline-block w-fit text-7xl font-extrabold mt-40">
+      <header className="inline-block w-fit text-5xl text-center md:text-7xl font-extrabold mt-40">
         <motion.h1 initial={{ opacity: 0.3 }} animate={{ y: -100, opacity: 1 }} transition={{ spring, duration: 0.5 }}>
           FRONT-END DEVELOPER
         </motion.h1>
       </header>
-      <div className="mb-40">
+      <div className="w-4/5 text-sm md:text-xl mb-40">
         <motion.p
           initial={{ opacity: 0, y: 100 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ spring, duration: 0.5, delay: 0.1 }}
-          className="text-xl text-center"
+          className="text-center"
         >
           프론트엔드 개발자 나근아입니다.
         </motion.p>
@@ -26,7 +26,7 @@ const Introduce = (): JSX.Element => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ spring, duration: 0.5, delay: 0.2 }}
-          className="text-xl mb-24 text-center"
+          className="mb-24 text-center"
         >
           어떻게 개발해야 사람들이 편리하다고 느낄까를 고민합니다.
         </motion.p>
