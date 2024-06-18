@@ -405,7 +405,7 @@ const ReactShopTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
               href="https://react-shop-geunana.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-sm md:btn-md lg:btn-lg border-solid border-2 border-gray-300 relative top-[28%] left-[25%] z-50"
+              className="inline-block btn btn-sm md:btn-md lg:btn-lg w-fit flex justify-center items-center border-solid border-2 border-gray-300 relative top-[28%] left-[25%] z-50"
             >
               배포 사이트 보러가기
             </a>
