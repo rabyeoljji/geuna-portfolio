@@ -398,17 +398,17 @@ const ReactShopTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
         )}
         {tutorialIdx === 8 && (
           <div id="reactShop_tutorial_8" className="w-[73vw] h-[calc(153vw-28px)] absolute top-2">
+            <div className="w-[40%] h-max relative top-[42%] left-[32%] z-40 cursor-pointer">
+              <span className="loading loading-ring loading-lg w-full text-gray-500"></span>
+            </div>
             <a
               href="https://react-shop-geunana.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-sm md:btn-md lg:btn-lg border-solid border-2 border-gray-300 relative top-[45%] left-[25%] z-50"
+              className="btn btn-sm md:btn-md lg:btn-lg border-solid border-2 border-gray-300 relative top-[28%] left-[25%] z-50"
             >
               배포 사이트 보러가기
             </a>
-            <div className="w-[40%] h-max relative top-[32%] left-[32%] z-40 cursor-pointer">
-              <span className="loading loading-ring loading-lg w-full text-gray-500"></span>
-            </div>
           </div>
         )}
       </>
