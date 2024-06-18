@@ -3,8 +3,18 @@ import MyWeddingSlide from "./MyWeddingSlide";
 import MyWeddingTutorial from "./MyWeddingTutorial";
 import NOTION_IMG from "../assets/image/project_screen/my_wedding/MYWEDDING_NOTION.png";
 import GITHUB_IMG from "../assets/image/project_screen/my_wedding/MYWEDDING_GITHUB.png";
+import { useSetAtom } from "jotai";
+import { tutorialAtom } from "../store/project";
+import { useEffect } from "react";
 
 const MyWeddingProject = (): JSX.Element => {
+  const setTutorialIdx = useSetAtom(tutorialAtom);
+
+  useEffect(() => {
+    setTutorialIdx(() => 0);
+    return setTutorialIdx(() => 0);
+  }, []);
+
   return (
     <>
       <motion.header

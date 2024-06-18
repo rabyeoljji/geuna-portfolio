@@ -26,7 +26,7 @@ const MyWeddingTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
               transition={{ type: "spring", duration: 1, delay: 0.3 }}
               className="w-max md:text-xs pad:text-base relative left-1/4 z-50"
             >
-              깜박이는 곳을 눌러 눌러 유저 사이드바를 열어보세요!
+              깜박이는 곳을 눌러 유저 사이드바를 열어보세요!
             </motion.div>
           </div>
         )}
@@ -191,7 +191,7 @@ const MyWeddingTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
               transition={{ type: "spring", duration: 1, delay: 0.3 }}
               className="w-max p-2 bg-gray-300 rounded-lg text-xs text-black relative top-[12%] left-[10%] z-50"
             >
-              깜박이는 곳을 눌러 눌러
+              깜박이는 곳을 눌러
               <br />
               유저 사이드바를 열어보세요!
             </motion.div>
@@ -212,7 +212,7 @@ const MyWeddingTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
               transition={{ type: "spring", duration: 1 }}
               className="w-max p-2 bg-gray-300 rounded-lg text-xs text-black relative top-[20%] left-[10%] z-50"
             >
-              깜박이는 곳을 눌러 눌러
+              깜박이는 곳을 눌러
               <br />
               로그인 페이지로 이동해보세요!
             </motion.div>
