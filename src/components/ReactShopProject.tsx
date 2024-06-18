@@ -81,9 +81,9 @@ const ReactShopProject = (): JSX.Element => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ type: "spring", duration: 1 }}
-          className="card max-w-96 h-[50vh] md:h-[60vh] lg:h-[80vh] bg-base-100 shadow-xl mb-8 lg:mb-0"
+          className="card max-w-96 h-[50vh] min-h-[25rem] md:h-[60vh] lg:h-[80vh] bg-base-100 shadow-xl mb-8 lg:mb-0"
         >
-          <figure className="h-1/2 bg-black">
+          <figure className="h-1/2 min-h-44 bg-black">
             <img src={NOTION_IMG} alt="MyWedding 프로젝트 노션" className="max-h-[40vh]" />
           </figure>
           <div className="card-body">
@@ -106,9 +106,9 @@ const ReactShopProject = (): JSX.Element => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ type: "spring", duration: 1 }}
-          className="card max-w-96 h-[50vh] md:h-[60vh] lg:h-[80vh] bg-base-100 shadow-xl"
+          className="card max-w-96 h-[50vh] min-h-[25rem] md:h-[60vh] lg:h-[80vh] bg-base-100 shadow-xl"
         >
-          <figure className="h-1/2 bg-black">
+          <figure className="h-1/2 min-h-44 bg-black">
             <img src={GITHUB_IMG} alt="MyWedding 프로젝트 github" className="max-h-[40vh]" />
           </figure>
           <div className="card-body">

@@ -347,7 +347,7 @@ const MyWeddingTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
               href="https://my-wedding-app.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-sm md:btn-md lg:btn-lg border-solid border-2 border-gray-300 relative top-[45%] left-[25%] z-50"
+              className="btn btn-sm md:btn-md pad:btn-lg border-solid border-2 border-gray-300 relative top-[45%] left-[26%] z-50"
             >
               배포 사이트 보러가기
             </a>
