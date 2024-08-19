@@ -4,6 +4,7 @@ import { projectAtom, projectType } from "../store/project";
 import ReactShopProject from "./ReactShopProject";
 import { useEffect } from "react";
 import { PROJECT } from "../constants/storage";
+import StudyBadgeProject from "./StudyBadgeProject";
 
 const Project = (): JSX.Element => {
   const [projectState, setProject] = useAtom(projectAtom);
@@ -14,7 +15,7 @@ const Project = (): JSX.Element => {
       console.log(currentProject);
       setProject(() => currentProject);
     } else {
-      setProject(() => "MyWedding");
+      setProject(() => "StudyBadge");
     }
 
     return sessionStorage.removeItem(PROJECT);
@@ -44,18 +45,18 @@ const Project = (): JSX.Element => {
         </button>
         <div className="divider divider-horizontal m-0"></div>
         <button
-          className={`btn btn-xs sm:btn-sm md:btn-md ${projectState === "TeamProject" && "btn-active"} btn-ghost text-center`}
+          className={`btn btn-xs sm:btn-sm md:btn-md ${projectState === "StudyBadge" && "btn-active"} btn-ghost text-center`}
           onClick={() => {
-            setProject("TeamProject");
-            sessionStorage.setItem(PROJECT, "TeamProject");
+            setProject("StudyBadge");
+            sessionStorage.setItem(PROJECT, "StudyBadge");
           }}
         >
-          TEAM PROJECT
+          STUDY BADGE
         </button>
       </div>
       {projectState === "MyWedding" && <MyWeddingProject />}
       {projectState === "ReactShop" && <ReactShopProject />}
-      {projectState === "TeamProject" && <></>}
+      {projectState === "StudyBadge" && <StudyBadgeProject />}
     </div>
   );
 };

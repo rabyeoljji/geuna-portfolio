@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import PROJECT_THUMBNAIL from "../assets/image/MYWEDDING_LOGIN.png";
+import PROJECT_THUMBNAIL from "../assets/image/study-badge-pad.png";
 import { spring } from "../animation/index_ani";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -32,7 +32,7 @@ const Career = (): JSX.Element => {
           >
             <img
               src={PROJECT_THUMBNAIL}
-              className={`${isHoveredProject ? "hidden" : ""} object-cover h-full rounded-xl dark:opacity-60`}
+              className={`${isHoveredProject ? "hidden" : ""} w-full h-full object-fill rounded-xl dark:opacity-60`}
             />
             <Project3DImage isHovered={isHoveredProject} />
           </motion.div>

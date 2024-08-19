@@ -153,7 +153,7 @@ const MyWeddingTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
             </motion.div>
           </div>
         )}
-        {(tutorialIdx === 6 || tutorialIdx === 7) && (
+        {tutorialIdx >= 6 && (
           <div
             id="wedding_tutorial_6"
             className="w-full h-[calc(40vw-3.25rem)] absolute right-0 md:top-[16%] pad:top-[13%] lg:top-[12%]"
@@ -166,7 +166,7 @@ const MyWeddingTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
             >
               배포 사이트 보러가기
             </a>
-            <div className="w-[30%] h-max relative bottom-[5%] left-[35%] xl:left-[32%] z-40 cursor-pointer">
+            <div className="w-[30%] h-max relative bottom-[5%] left-[35%] xl:left-[32%] z-40">
               <span className="loading loading-ring loading-lg w-full text-gray-500"></span>
             </div>
           </div>
@@ -343,7 +343,7 @@ const MyWeddingTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element => 
         )}
         {tutorialIdx === 7 && (
           <div id="wedding_tutorial_7" className="w-[73vw] h-[calc(153vw-28px)] absolute top-2">
-            <div className="w-[40%] h-max relative top-[42%] left-[32%] z-40 cursor-pointer">
+            <div className="w-[40%] h-max relative top-[42%] left-[32%] z-40">
               <span className="loading loading-ring loading-lg w-full text-gray-500"></span>
             </div>
             <a
