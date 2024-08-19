@@ -10,10 +10,10 @@ const Project3DImage = ({ isHovered }: { isHovered: boolean }): JSX.Element => {
       <motion.img
         initial={{ opacity: 0, scale: 0 }}
         animate={isHovered ? { opacity: 1, scale: 1.5, rotate: -30 } : {}}
-        style={{ x: "-5vw", y: "-10vh" }}
+        style={{ x: "-6vw", y: "-7vh" }}
         transition={{ delay: 0.1 }}
         src={PHONE_MOCKUP}
-        className="w-[28%] absolute top-[20%] left-[25%] md:top-[15%] z-10"
+        className="w-[28%] absolute top-[10%] left-[22%] md:top-[18%]"
       />
       <motion.img
         initial={{ opacity: 0, scale: 0 }}
@@ -21,21 +21,29 @@ const Project3DImage = ({ isHovered }: { isHovered: boolean }): JSX.Element => {
         style={{ x: "5vw", y: "-10vh" }}
         transition={{ delay: 0.1 }}
         src={PC_MOCKUP}
-        className="w-[55%] absolute top-[20%] left-[25%] md:top-[15%]"
+        className="w-[55%] absolute top-[20%] left-[25%] md:top-[15%] z-10"
       />
-      <motion.div
+      <motion.img
         initial={{ opacity: 0, scale: 0 }}
-        animate={isHovered ? { opacity: 1, scale: 1.5, rotate: 0, y: "calc(20vh)" } : {}}
-        style={{ y: "20vh" }}
+        animate={isHovered ? { opacity: 1, scale: 1.5, rotate: 50 } : {}}
+        style={{ x: "7vw", y: "20vh" }}
         transition={{ delay: 0.1 }}
-        className="relative w-[80%] top-[10%] left-[20%] md:top-[30%]"
+        src={PAD_MOCKUP}
+        className="w-[30%] md:w-[35%] absolute top-[-20%] left-[25%] md:top-[15%] z-20"
+      />
+      {/* <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={isHovered ? { opacity: 1, scale: 1.5, rotate: 0 } : {}}
+        style={{}}
+        transition={{ delay: 0.1 }}
+        className="absolute w-[80%] left-[20%] top-[10%] md:top-[130%] z-0"
       >
         <img src={PAD_MOCKUP} className="" />
         <img
           src={STUDY_BADGE_PAD}
-          className="absolute w-[22%] scale-y-125 rotate-[62deg] -skew-y-[37deg] top-[15%] left-[40%]"
+          className="absolute w-[21%] scale-y-125 rotate-[62deg] -skew-y-[38deg] top-[18%] left-[40%]"
         />
-      </motion.div>
+      </motion.div> */}
     </>
   );
 };
