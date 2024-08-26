@@ -418,11 +418,11 @@ const StudyBadgeTutorial = ({ isMobile }: { isMobile: boolean }): JSX.Element =>
               href="https://tenten-studybadge.notion.site/1f160e99934a414f896346f1f4f7d406?v=a3f716340b44407a984769df8645934d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg relative top-[35%] left-[38%] z-50"
+              className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg relative top-[35%] left-[40%] z-50"
             >
               시연 영상 보러가기
             </a>
-            <div className="w-[30%] h-max relative bottom-[5%] left-[35%] xl:left-[32%] z-40">
+            <div className="w-[30%] h-max relative bottom-[5%] left-[35%] xl:left-[33%] z-40">
               <span className="loading loading-ring loading-lg w-full text-gray-500"></span>
             </div>
           </div>
