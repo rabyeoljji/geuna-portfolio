@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import PHONE_MOCKUP from "../assets/image/react-shop-mockup.png";
+import PHONE_MOCKUP from "../assets/image/picktoss-mockup.png";
 import PC_MOCKUP from "../assets/image/my-wedding-mockup.png";
 import PAD_MOCKUP from "../assets/image/team-mockup.png";
 

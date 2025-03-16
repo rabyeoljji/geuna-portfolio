@@ -58,7 +58,7 @@ const StudyBadgeProject = (): JSX.Element => {
           <div className="mockup-browser-toolbar">
             <div className="input">https://study-badge.vercel.app/</div>
           </div>
-          <div className="w-full h-[calc(40vw-3.25rem)] bg-base-200 overflow-hidden" id="myWeddingScreen">
+          <div className="w-full h-[calc(40vw-3.25rem)] bg-base-200 overflow-hidden" id="studyBadgeScreen">
             <StudyBadgeSlide isMobile={false} />
           </div>
           <StudyBadgeTutorial isMobile={false} />

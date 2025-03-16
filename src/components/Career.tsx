@@ -28,7 +28,7 @@ const Career = (): JSX.Element => {
         >
           <motion.div
             animate={isHoveredProject ? { scale: 0.8 } : {}}
-            className="w-4/5 xl:w-1/2 h-[30vw] bg-base-100 rounded-xl mb-20 md:mb-0 md:mr-20"
+            className="w-full h-[80vw] md:w-3/5 md:h-[60vw] xl:h-[30vw] xl:w-1/2 bg-base-100 rounded-xl mb-20 md:mb-0 md:mr-20"
           >
             <img
               src={PROJECT_THUMBNAIL}
