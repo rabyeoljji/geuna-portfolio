@@ -15,7 +15,7 @@ export default defineConfig({
         name: "Geuna's portfolio",
         short_name: "Geuna's portfolio",
         description: "Hi, this is Geuna's portfolio",
-        theme_color: "#00000000",
+        theme_color: "transparent",
         background_color: "#ffffff",
         display: "fullscreen",
         icons: [
